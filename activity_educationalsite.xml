@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".educationalsite"
+    android:background="@drawable/ck">
+    <RelativeLayout
+        android:id="@+id/tens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="List of educationa sites"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            android:background="@color/purple_700"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/backg"
+        android:layout_below="@+id/tens">
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:alignmentMode="alignMargins"
+            app:columnCount="2"
+            app:rowCount="3"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/chatgpt"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_row="0"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="25dp"
+
+                >
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/chatgt"
+                        android:layout_gravity="center"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="chat gpt"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/javat"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_row="0"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="25dp"
+
+                >
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/javatpoint"
+                        android:layout_gravity="center"                 />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="javatpoint"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/w3school"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_row="1"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="25dp"
+
+                >
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/w3school"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="w3 school"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nepenotes"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_row="01"
+                app:layout_column="01"
+                app:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="25dp"
+
+                >
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/nepenotes"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nepal Enotes"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/ck"
+        android:id="@+id/back"
+
+        >
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text1"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageView
+            android:layout_below="@+id/txt1"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:background="@drawable/group"
+            android:layout_centerHorizontal="true"
+
+            />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backg"
+        android:layout_below="@+id/back">
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:alignmentMode="alignMargins"
+            app:columnCount="2"
+            app:rowCount="3"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_row="0"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="25dp"
+
+                >
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/school"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="school info"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_row="0"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="25dp"
+
+                >
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/course"
+                        android:layout_gravity="center"                 />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="faculties"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_row="1"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="25dp"
+
+                >
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/educ"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edu.sites"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c4"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_row="01"
+                app:layout_column="01"
+                app:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="25dp"
+
+                >
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/calender"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="calender"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
